@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>选购服务类型</title>
+</head>
+<body>
+<p>
+第一步:选择服务类型:
+</p>
+<form action="/pay" method="post">
+<p>
+点菜服务1个月[0.15元]
+<input type="radio" <%if (total == 0.15) { %>checked='checked'<% } %> name="total" value="0.15" />
+</p>
+<p>
+点菜服务2个月[0.25元]
+<input type="radio" <%if (total == 0.25) { %>checked='checked'<% } %> name="total" value="0.25" />
+</p>
+<p>
+点菜服务6个月[0.6元]
+<input type="radio" <%if (total == 0.6) { %>checked='checked'<% } %> name="total" value="0.6" />
+</p>
+<hr />
+<input type="submit" value="下一步">
+</form>
+</body>
+</html>

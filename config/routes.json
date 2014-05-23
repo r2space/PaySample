@@ -1,0 +1,58 @@
+{
+  "api": {
+    "login": [
+      {
+        "url": "POST /login/user.json",
+        "action": "login",
+        "custom": "login"
+      },
+      {
+        "url": "GET /logout",
+        "action": "logout",
+        "custom": "logout"
+      }
+    ],
+    "payment":[
+      {
+        "url": "POST /jump",
+        "action": "jump",
+        "custom": "jump"
+      },
+      {
+        "url": "GET /product",
+        "action": "product",
+        "custom": "product"
+      },
+      {
+        "url": "POST /pay",
+        "action": "pay",
+        "custom": "pay"
+      },
+      {
+        "url": "GET /pay_return",
+        "action": "pay_return",
+        "custom": "pay_return"
+      },
+      {
+        "url": "GET /pay_notify",
+        "action": "pay_notify",
+        "custom": "pay_notify"
+      }
+    ]
+  },
+
+  "website": {
+    "login": [
+      {
+        "url": "GET /",
+        "template": "login",
+        "parameter": { "title": "login" }
+      },
+      {
+        "url": "GET /login",
+        "template": "login",
+        "parameter": { "title": "login" }
+      }
+    ]
+  }
+}

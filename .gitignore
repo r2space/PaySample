@@ -1,0 +1,9 @@
+node_modules/
+docs/
+reports/
+logs/*log*
+tmp/
+.DS_Store
+.idea
+cover*
+npm-debug.log

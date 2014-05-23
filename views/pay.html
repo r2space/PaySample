@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script type='text/javascript' src='http://union.tenpay.com/bankList/jquery.js'></script>
+  <link rel="stylesheet" type="text/css" href="http://union.tenpay.com/bankList/css_col4.css">
+  <title>选择支付方式</title>
+</head>
+<body>
+<p>
+第二步:选择支付方式:
+</p>
+<div id="tenpayBankList"></div>
+<div style="clear:both;"></div>
+<form action="/jump" target="_blank" method="post" >
+<input type="hidden" name="bank_type_value" id="bank_type_value" value="0">
+<script type='text/javascript' src='http://union.tenpay.com/bankList/bank.js'></script>
+<hr />
+<input type="submit" value="下一步"/>
+</form>
+<script>
+var selected = <%= type_code %>;
+$("input[name='bank_type']").each(function(){
+  if($(this).attr('value') == selected){
+    $(this).attr("checked","checked");
+    $("#bank_type_value").val(selected);
+  }
+}); 
+
+</script>
+</body>
+</html>

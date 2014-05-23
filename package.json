@@ -1,0 +1,32 @@
+{
+  "name": "PaySample",
+  "version": "0.0.1",
+  "description": "PaySample",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app",
+    "blanket": { "pattern": ["src"] }
+  },
+  "keywords": ["PaySample"],
+  "author": "fzcs",
+  "license": "MIT",
+  "dependencies": {
+    "smartcore": "0.5.7",
+    "xml2js": "0.4.3"
+  },
+  "devDependencies": {
+    "should": "~2.1.1",
+    "grunt": "~0.4.2",
+    "grunt-contrib-less": "~0.8.3",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-jsdoc": "~0.4.2",
+    "grunt-mocha-cli": "~1.4.0",
+    "grunt-mocha-cov": "~0.1.1",
+    "grunt-jscoverage": "~0.0.3",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-plato": "~0.2.1"
+  }
+}

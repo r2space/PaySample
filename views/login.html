@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PaySample Login</title>
+</head>
+<body>
+
+  <div class="login">
+    <h1>Welcome to PaySample !</h1>
+
+    <form action="/login/user.json" method="post">
+        <tr>
+            <th>
+                User ID
+            </th>
+            <td>
+              <input type="text" name="name" value="" placeholder="Username">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Password
+            </th>
+            <td>
+              <input type="password" name="password" value="" placeholder="Password">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Login">
+            </td>
+        </tr>
+    </form>
+  </div>
+
+</body>
+</html>

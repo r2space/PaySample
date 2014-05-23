@@ -1,0 +1,31 @@
+{
+  "appenders": [
+    {
+      "type": "console"
+    },
+    {
+      "category": "operation"
+    , "type": "dateFile"
+    , "filename": "logs/operation.log"
+    , "pattern": "-yyyyMMdd"
+    },
+    {
+      "category": "application"
+    , "type": "dateFile"
+    , "filename": "logs/application.log"
+    , "pattern": "-yyyyMMdd"
+    },
+    {
+      "category": "audit"
+    , "type": "dateFile"
+    , "filename": "logs/audit.log"
+    , "pattern": "-yyyyMMdd"
+    }
+  ],
+
+  "levels": {
+    "application": "DEBUG"
+  , "audit": "INFO"
+  , "operation": "INFO"
+  }
+}
